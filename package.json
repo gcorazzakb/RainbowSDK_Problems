@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --ssl --ssl-key localhost.key  --ssl-cert localhost.crt --port 4202",
     "build": "ng build",
     "copy": "cp ./node_modules/rainbow-web-sdk/src/vendors-sdk.min.js ./src/assets",
     "test": "ng test",

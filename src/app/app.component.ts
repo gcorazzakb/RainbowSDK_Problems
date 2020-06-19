@@ -34,7 +34,7 @@ export class AppComponent {
         const contact = this.rainbowSDK.contacts.getContactByJID(this._jidToCall);
         console.log('contact', contact);
         if (this.rainbowSDK.webRTC.canMakeAudioVideoCall()) {
-          this.rainbowSDK.webRTC.callInAudio(contact);
+          this.rainbowSDK.webRTC.callInVideo(contact);
         } else {
           console.log('Cant call');
         }

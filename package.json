@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "startPWATest": "ng build --prod && http-server -p 8080 -c-1 dist/starter-kit-angular",
+    "startPWATestWorking": "ng build --prod --optimization=false && http-server -p 8080 -c-1 dist/starter-kit-angular",
     "build": "ng build",
     "copy": "cp ./node_modules/rainbow-web-sdk/src/vendors-sdk.min.js ./src/assets",
     "test": "ng test",

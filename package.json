@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "startPWATest": "ng build --prod && http-server -p 8080 -c-1 dist/starter-kit-angular",
     "build": "ng build",
     "copy": "cp ./node_modules/rainbow-web-sdk/src/vendors-sdk.min.js ./src/assets",
     "test": "ng test",
@@ -20,6 +21,7 @@
     "@angular/platform-browser": "~9.0.5",
     "@angular/platform-browser-dynamic": "~9.0.5",
     "@angular/router": "~9.0.5",
+    "@angular/service-worker": "~9.0.5",
     "rainbow-web-sdk": "^1.72.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
@@ -36,6 +38,7 @@
     "codelyzer": "^5.1.2",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
+    "http-server": "^0.12.3",
     "karma": "~4.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage-istanbul-reporter": "~2.1.0",
